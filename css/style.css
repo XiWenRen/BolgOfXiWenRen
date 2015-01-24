@@ -162,18 +162,6 @@ a.label:hover{
 	text-indent:2em;
 }
 
-/*.content_end{
-	position:fixed;
-	margin:auto;
-	text-align: left;
-	bottom: 0px;
-	background-color:#000;
-	color: #fff;
-	width: 100%;
-	height: 100px;
-	line-height: 30px;
-}*/
-
 .content_comment{
 	width: 70%;
 	margin-left: auto;
@@ -219,7 +207,155 @@ a.label:hover{
 .abstract_time{
 	float: right;
 }
+.commends{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-top: 10px;
+}
+.commend_head{
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	border: 1px solid #EEE;
+	background-color: #FFE;
+}
+.commend_head_word{
+	padding-left: 15px;
+	letter-spacing: 2px;
+}
+.commend_mine{
+	float: left;
+	margin-left: 10px;
+	width: 80%;
+}
+.commend_photo{
+	margin-top: 20px;
+	margin-left: 45px;
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+.commend_photo img{
+	border-radius: 50%;
+	width: 100%; 
+	height: 100%
+}
+.commend_name{
+	float: left;
+	margin-left: 10px;
+	width: 75%;
+	height: 20px;
+}
+.commend_name input{
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	height: 100%;
+}
+.commend_content{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 75%;
+	border: 1px solid #DDDDDD;
+}
+.commend_content textarea{
+	overflow: hidden;
+	width: 100%;
+	height: 60px;
+	resize: none;
+	border: none;
+}
+.commend_content a{
+	float: left;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	background-color:#15a7f0;
+	border-radius: 5px;
+	padding: 3px 3px 3px 3px;
+	color: #FFFFFF;
+	width: 30px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	
+}
+.commends_others ul{
+	list-style: none;
+}
+.commends_others li{
+	padding: 10px;
+	min-height: 125px;
+}
+.commend_other_name{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 60px;
+	height: 60px;
+}
+.commend_other_name img{
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+}
+.commend_other_name span{
+	margin: 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.commend_other_name h5{
+	color: #999999;
+	font-size: 11px;
+	font-family: "Segoe UI", Segoe, Calibri, Arial, sans-serif;
+}
+.commend_other_content{
+	float: left;
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 82%;
+	height: 100%;
+	font-size: 14px;
+	font-family: "黑体";
+	line-height: 15px;
+}
+/*对话框*/
+.commends_communication p {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+.commends_communication {
+	position: relative;
+	min-height: 15px;
+	padding: 10px 15px 5px 15px;
+	border-top: 1px solid #fff;
+	background-color:#EEEEEE;
+	word-wrap: break-word;
+}
+.commends_communication span{
+	content: "\00a0"; /* &nbsp; */
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: -20px; /* width of right border */
+	width: 0;
+	height: 0;
+	border-width: 10px 20px 10px 0;
+	border-style: solid;
+	border-top-color : transparent;
+	border-bottom-color : transparent;
+	border-right-color : #EEEEEE;
+	border-left-color:transparent;
+}
 
+/*blockquote:hover {
+	top: -1px;
+	left: -1px;
+	box-shadow: 3px 3px 2px hsla(0,0%,0%,.3); 
+	text-shadow: 1px 1px 1px hsla(0,0%,100%,.7); 
+}*/
 /*动画*/
 @-webkit-keyframes menuSlideNarrow {
 	from {
@@ -262,4 +398,9 @@ a.label:hover{
 		background-color: #DDDDDD;
 		color: #111111;
 	}
-}
+
+/**/
+@-webkit-input-placeholder { 
+	color: #D6D0CA !important; 
+	}
+
