@@ -1,6 +1,5 @@
 window.onload = function() {
 	init_artical_margin();
-	comments_color();
 }
 
 var init_artical_margin = function() {
@@ -20,15 +19,29 @@ var init_artical_margin = function() {
 	}
 }
 
-var comments_color = function() {
-	for (var i = 1; i < 4; i++) {
-		var str1 = "commends_communication_" + i;
-		var str2 = "commends_communication_color_" + i;
-		var comments_color = document.getElementById(str1);
-		var comments_color_after = document.getElementById(str2);
-		var bg_color = get_random_color();
-		comments_color.style.backgroundColor = bg_color;
-		comments_color_after.style.borderRightColor = bg_color;
+var mousefun = function() {
+	var title_num = event.target.id;
+	var str = title_num;
+	var id_num = str.charAt(11);
+	for (var j = 1; j < 7; j++) {
+		if (j != id_num) {
+			var content_num = "content_id_" + j;
+			var content = document.getElementById(content_num);
+			content.style.display = "none";
+		} else {
+			var content_num = "content_id_" + id_num;
+			var content = document.getElementById(content_num);
+			content.style.display = "";
+			for (var i = 1; i < 4; i++) {
+				var str1 = "commends_communication_" + id_num + "_" + i;
+				var str2 = "commends_communication_color_" + id_num + "_" + i;
+				var comments_color = document.getElementById(str1);
+				var comments_color_after = document.getElementById(str2);
+				var bg_color = get_random_color();
+				comments_color.style.backgroundColor = bg_color;
+				comments_color_after.style.borderRightColor = bg_color;
+			}
+		}
 	}
 }
 

@@ -16,95 +16,261 @@
 		<div id="article" class="article">
 			<div id="titles" class="titles vertical_item">
 				<ul id="title_lists" class="title_lists">
-					<li id="title_list" class="title_list" onmouseenter="">文章列表1</li>
-					<!--<li class="title_list_hover">删除</li>-->
-					<li id="title_list" class="title_list">文章列表2</li>
-					<li id="title_list" class="title_list">文章列表3</li>
-					<li id="title_list" class="title_list">文章列表4</li>
-					<li id="title_list" class="title_list">文章列表5</li>
-					<li id="title_list" class="title_list">文章列表6</li>
+					<li id="title_list_1" class="title_list" onclick="mousefun()">文章列表1</li>
+					<li id="title_list_2" class="title_list" onclick="mousefun()">文章列表2</li>
+					<li id="title_list_3" class="title_list" onclick="mousefun()">文章列表3</li>
+					<li id="title_list_4" class="title_list" onclick="mousefun()">文章列表4</li>
+					<li id="title_list_5" class="title_list" onclick="mousefun()">文章列表5</li>
+					<li id="title_list_6" class="title_list" onclick="mousefun()">文章列表6</li>
 				</ul>
 			</div>
 			<div id="content" class="content">
-				<div class="content_title">
-					文章标题1
-				</div>
-				<div class="content_appendage">
-					<div class="guide">
-						标签<a href="#" class="label">css3</a> 2015年1月21日13:05:36 点击次数：110
+				<div id="content_id_1" style="display: none;">
+					<div class="content_title">
+						文章标题1
 					</div>
-					<div class="edit">
-						[<a href="#">编辑</a>|<a href="#">删除</a>]
+					<div class="content_appendage">
+						<div class="guide">
+							标签<a href="#" class="label">css3</a> 2015年1月21日13:05:36 点击次数：110
+						</div>
+						<div class="edit">
+							[<a href="#">编辑</a>|<a href="#">删除</a>]
+						</div>
 					</div>
-				</div>
-				<div class="content_article">
-					<p>在刚才的导语里提到，Markdown 是一种用来写作的轻量级「标记语言」， 它用简洁的语法代替排版，而不像一般我们用的字处理软件 Word 或 Pages 有大量的排版、字体设置。它使我们专心于码字，用「标记」语法，来代替常见的排版格式。 例如此文从内容到格式，甚至插图，键盘就可以通通搞定了。目前来看，支持 Markdown 语法的编辑器有很多，包括很多网站（例如简书）也支持了 Markdown 的文字录入。 Markdown 从写作到完成，导出格式随心所欲，你可以导出 HTML 格式的文件用来网站发布，也可以十分方便的导出
-						PDF 格式，这种格式写出的简历更能得到 HR 的好感。
-						甚至可以利用 CloudApp 这种云服务工具直接上传至网页用来分享你的文章，全球最大的轻博客平台Tumblr，也支持 Mou 这类 Markdown 工具的直接上传。
-					</p>
-				</div>
+					<div class="content_article">
+						<p>在刚才的导语里提到，Markdown 是一种用来写作的轻量级「标记语言」， 它用简洁的语法代替排版，而不像一般我们用的字处理软件 Word 或 Pages 有大量的排版、字体设置。它使我们专心于码字，用「标记」语法，来代替常见的排版格式。 例如此文从内容到格式，甚至插图，键盘就可以通通搞定了。目前来看，支持 Markdown 语法的编辑器有很多，包括很多网站（例如简书）也支持了 Markdown 的文字录入。 Markdown 从写作到完成，导出格式随心所欲，你可以导出 HTML 格式的文件用来网站发布，也可以十分方便的导出
+							PDF 格式，这种格式写出的简历更能得到 HR 的好感。 甚至可以利用 CloudApp 这种云服务工具直接上传至网页用来分享你的文章，全球最大的轻博客平台Tumblr，也支持 Mou 这类 Markdown 工具的直接上传。
+						</p>
+					</div>
 
-				<div id="commends" class="commends">
-					<div class="commend_head">
-						<span class="commend_head_word">评论区</span>
-					</div>
-					<div class="commends_others">
-						<ul>
-							<li>
-								<div class="commend_other_name">
-									<img src="img/photo.jpg" />
-									<span>Jay</span>
-									<h5>2015-1-24</h5>
-								</div>
-								<div class="commend_other_content">
-									<div class="commends_communication" id="commends_communication_1" name="1">
-										<span id="commends_communication_color_1" name="1"></span>
-										<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS
-											平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。
-										</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="commend_other_name">
-									<img src="img/photo.jpg" />
-									<span>Jay</span>
-									<h5>2015-1-24</h5>
-								</div>
-								<div class="commend_other_content">
-									<div class="commends_communication" id="commends_communication_2" name="2">
-										<span id="commends_communication_color_2" name="2"></span>
-										<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
-										</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="commend_other_name">
-									<img src="img/photo.jpg" />
-									<span>Jay</span>
-									<h5>2015-1-24</h5>
-								</div>
-								<div class="commend_other_content">
-									<div class="commends_communication" id="commends_communication_3" name="3">
-										<span id="commends_communication_color_3" name="3"></span>
-										<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
-										</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="commend_mine">
-						<div class="commend_photo">
-							<img src="img/photo.jpg" />
+					<div id="commends" class="commends">
+						<div class="commend_head">
+							<span class="commend_head_word">评论区</span>
 						</div>
-						<div class="commend_name">
-							<input type="text" placeholder="昵称" />
+						<div class="commends_others">
+							<ul>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_1_1">
+											<span id="commends_communication_color_1_1"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS
+												平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_1_2">
+											<span id="commends_communication_color_1_2"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_1_3">
+											<span id="commends_communication_color_1_3"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
-						<div class="commend_content">
-							<textarea placeholder="我的评论……"></textarea>
-							<a href="#">发布</a>
+						<div class="commend_mine">
+							<div class="commend_photo">
+								<img src="img/photo.jpg" />
+							</div>
+							<div class="commend_name">
+								<input type="text" placeholder="昵称" />
+							</div>
+							<div class="commend_content">
+								<textarea placeholder="我的评论……"></textarea>
+								<a href="#">发布</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="content_id_2" style="display: none;">
+					<div class="content_title">
+						文章标题2
+					</div>
+					<div class="content_appendage">
+						<div class="guide">
+							标签<a href="#" class="label">css3</a> 2015年1月21日13:05:36 点击次数：110
+						</div>
+						<div class="edit">
+							[<a href="#">编辑</a>|<a href="#">删除</a>]
+						</div>
+					</div>
+					<div class="content_article">
+						<p>在刚才的导语里提到，Markdown 是一种用来写作的轻量级「标记语言」， 它用简洁的语法代替排版，而不像一般我们用的字处理软件 Word 或 Pages 有大量的排版、字体设置。它使我们专心于码字，用「标记」语法，来代替常见的排版格式。 例如此文从内容到格式，甚至插图，键盘就可以通通搞定了。目前来看，支持 Markdown 语法的编辑器有很多，包括很多网站（例如简书）也支持了 Markdown 的文字录入。 Markdown 从写作到完成，导出格式随心所欲，你可以导出 HTML 格式的文件用来网站发布，也可以十分方便的导出
+							PDF 格式，这种格式写出的简历更能得到 HR 的好感。 甚至可以利用 CloudApp 这种云服务工具直接上传至网页用来分享你的文章，全球最大的轻博客平台Tumblr，也支持 Mou 这类 Markdown 工具的直接上传。
+						</p>
+					</div>
+
+					<div id="commends" class="commends">
+						<div class="commend_head">
+							<span class="commend_head_word">评论区</span>
+						</div>
+						<div class="commends_others">
+							<ul>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_2_1">
+											<span id="commends_communication_color_2_1"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS
+												平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_2_2">
+											<span id="commends_communication_color_2_2" name="2"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_2_3">
+											<span id="commends_communication_color_2_3"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="commend_mine">
+							<div class="commend_photo">
+								<img src="img/photo.jpg" />
+							</div>
+							<div class="commend_name">
+								<input type="text" placeholder="昵称" />
+							</div>
+							<div class="commend_content">
+								<textarea placeholder="我的评论……"></textarea>
+								<a href="#">发布</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="content_id_3" style="display: none;">
+					<div class="content_title">
+						文章标题3
+					</div>
+					<div class="content_appendage">
+						<div class="guide">
+							标签<a href="#" class="label">css3</a> 2015年1月21日13:05:36 点击次数：110
+						</div>
+						<div class="edit">
+							[<a href="#">编辑</a>|<a href="#">删除</a>]
+						</div>
+					</div>
+					<div class="content_article">
+						<p>在刚才的导语里提到，Markdown 是一种用来写作的轻量级「标记语言」， 它用简洁的语法代替排版，而不像一般我们用的字处理软件 Word 或 Pages 有大量的排版、字体设置。它使我们专心于码字，用「标记」语法，来代替常见的排版格式。 例如此文从内容到格式，甚至插图，键盘就可以通通搞定了。目前来看，支持 Markdown 语法的编辑器有很多，包括很多网站（例如简书）也支持了 Markdown 的文字录入。 Markdown 从写作到完成，导出格式随心所欲，你可以导出 HTML 格式的文件用来网站发布，也可以十分方便的导出
+							PDF 格式，这种格式写出的简历更能得到 HR 的好感。 甚至可以利用 CloudApp 这种云服务工具直接上传至网页用来分享你的文章，全球最大的轻博客平台Tumblr，也支持 Mou 这类 Markdown 工具的直接上传。
+						</p>
+					</div>
+
+					<div id="commends" class="commends">
+						<div class="commend_head">
+							<span class="commend_head_word">评论区</span>
+						</div>
+						<div class="commends_others">
+							<ul>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_3_1">
+											<span id="commends_communication_color_3_1"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS
+												平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。 这里拿 iPhone 的界面描述 iOS 平板中的举例说明。
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_3_2">
+											<span id="commends_communication_color_3_2"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="commend_other_name">
+										<img src="img/photo.jpg" />
+										<span>Jay</span>
+										<h5>2015-1-24</h5>
+									</div>
+									<div class="commend_other_content">
+										<div class="commends_communication" id="commends_communication_3_3">
+											<span id="commends_communication_color_3_3"></span>
+											<p>iOS 的界面通常由顶部导航栏和底部 Tap 组成的 Bar、内容、控制按钮， 以及及警告提示等消息提示组成，iOS 平板亦同。
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="commend_mine">
+							<div class="commend_photo">
+								<img src="img/photo.jpg" />
+							</div>
+							<div class="commend_name">
+								<input type="text" placeholder="昵称" />
+							</div>
+							<div class="commend_content">
+								<textarea placeholder="我的评论……"></textarea>
+								<a href="#">发布</a>
+							</div>
 						</div>
 					</div>
 				</div>
