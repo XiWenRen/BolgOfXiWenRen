@@ -46,10 +46,9 @@ var mousefun = function() {
 }
 
 var get_random_color = function() {
-	return '#' +
-		(function(color) {
-			return (color += '0123456789abcdef' [Math.floor(Math.random() * 16)]) && (color.length == 6) ? color : arguments.callee(color);
-		})('');
+	var arr = ["#fde8fd","#f1defd","#fddef0","#fcd5d5","#fce8d5","#fcfad5","#f2fcd5","#dffcd5","#fcd6e7","#effcd6","#d6fcf3","#d5ebfc","#fec1fd"];
+	var index = Math.floor((Math.random() * arr.length));
+	return arr[index];
 }
 
 var togglemenu_item = function() {
